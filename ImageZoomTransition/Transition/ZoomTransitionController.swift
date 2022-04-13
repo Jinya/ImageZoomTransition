@@ -1,18 +1,24 @@
-//
-//  NavController.swift
-//  ImageZoomTransition
-//
-//  Created by Jinya on 2022/4/13.
-//
-
 import UIKit
 
-class NavController: UINavigationController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
+/// Coordinates the overall zoom transition by vending push and pop transition animators for the
+/// navigation controller.
+///
+/// To use the transition:
+///   - Assign the navigation controller to the `navigationController` property.
+///   - Adopt the `ZoomTransitionDelegate` protocol in participating view controllers on the
+///     navigation stack.
+class ZoomTransitionController: NSObject {
 
-        // set delegate
-        self.delegate = self
+    /// The navigation controller for which to manage the zoom transition. The receiver assigns
+    /// itself as the delegate of the navigation controller.
+    weak var navigationController: UINavigationController? {
+        didSet { navigationController?.delegate = self }
+    }
+
+    init(navigationController: UINavigationController? = nil) {
+        self.navigationController = navigationController
+        super.init()
+        navigationController?.delegate = self
     }
 
     /// Handles the slide to pop gesture, typically called from the view controller to be popped.
@@ -40,12 +46,11 @@ class NavController: UINavigationController {
 
     private func startInteractiveTransition() {
         wantsInteractiveStart = true
-//        navigationController?.popViewController(animated: true)
-        self.popViewController(animated: true)
+        navigationController?.popViewController(animated: true)
     }
 }
 
-extension NavController: UINavigationControllerDelegate {
+extension ZoomTransitionController: UINavigationControllerDelegate {
 
     func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationController.Operation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         guard let from = fromVC as? ZoomTransitionDelegate,

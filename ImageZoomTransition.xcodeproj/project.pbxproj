@@ -20,7 +20,8 @@
 		30B8BAE72807219500748F15 /* ZoomTransitionTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B8BAE62807219500748F15 /* ZoomTransitionTypes.swift */; };
 		30B8BAE9280721A200748F15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B8BAE8280721A200748F15 /* ViewController.swift */; };
 		30B8BAEB2807221C00748F15 /* TransitionUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B8BAEA2807221C00748F15 /* TransitionUtilities.swift */; };
-		30B8BAED2807224100748F15 /* NavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B8BAEC2807224100748F15 /* NavController.swift */; };
+		30B8BAEF280738DA00748F15 /* ZoomTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B8BAEE280738DA00748F15 /* ZoomTransitionController.swift */; };
+		30B8BAF128073CB400748F15 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B8BAF028073CB400748F15 /* Coordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,7 +40,8 @@
 		30B8BAE62807219500748F15 /* ZoomTransitionTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomTransitionTypes.swift; sourceTree = "<group>"; };
 		30B8BAE8280721A200748F15 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		30B8BAEA2807221C00748F15 /* TransitionUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionUtilities.swift; sourceTree = "<group>"; };
-		30B8BAEC2807224100748F15 /* NavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavController.swift; sourceTree = "<group>"; };
+		30B8BAEE280738DA00748F15 /* ZoomTransitionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomTransitionController.swift; sourceTree = "<group>"; };
+		30B8BAF028073CB400748F15 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,8 +76,8 @@
 			children = (
 				30B8BAC928071F7E00748F15 /* AppDelegate.swift */,
 				30B8BACB28071F7E00748F15 /* SceneDelegate.swift */,
+				30B8BAF028073CB400748F15 /* Coordinator.swift */,
 				30B8BAE8280721A200748F15 /* ViewController.swift */,
-				30B8BAEC2807224100748F15 /* NavController.swift */,
 				30B8BACD28071F7E00748F15 /* ThumbImageViewController.swift */,
 				30B8BADD28071FA300748F15 /* ImageDetailViewController.swift */,
 				30B8BAE12807216000748F15 /* Transition */,
@@ -91,9 +93,10 @@
 		30B8BAE12807216000748F15 /* Transition */ = {
 			isa = PBXGroup;
 			children = (
+				30B8BAE62807219500748F15 /* ZoomTransitionTypes.swift */,
 				30B8BAE22807218000748F15 /* ZoomPushTransition.swift */,
 				30B8BAE42807218A00748F15 /* ZoomPopTransition.swift */,
-				30B8BAE62807219500748F15 /* ZoomTransitionTypes.swift */,
+				30B8BAEE280738DA00748F15 /* ZoomTransitionController.swift */,
 				30B8BAEA2807221C00748F15 /* TransitionUtilities.swift */,
 			);
 			path = Transition;
@@ -173,10 +176,11 @@
 			files = (
 				30B8BACE28071F7E00748F15 /* ThumbImageViewController.swift in Sources */,
 				30B8BACA28071F7E00748F15 /* AppDelegate.swift in Sources */,
+				30B8BAEF280738DA00748F15 /* ZoomTransitionController.swift in Sources */,
 				30B8BAEB2807221C00748F15 /* TransitionUtilities.swift in Sources */,
 				30B8BACC28071F7E00748F15 /* SceneDelegate.swift in Sources */,
 				30B8BADE28071FA300748F15 /* ImageDetailViewController.swift in Sources */,
-				30B8BAED2807224100748F15 /* NavController.swift in Sources */,
+				30B8BAF128073CB400748F15 /* Coordinator.swift in Sources */,
 				30B8BAE32807218000748F15 /* ZoomPushTransition.swift in Sources */,
 				30B8BAE52807218A00748F15 /* ZoomPopTransition.swift in Sources */,
 				30B8BAE9280721A200748F15 /* ViewController.swift in Sources */,

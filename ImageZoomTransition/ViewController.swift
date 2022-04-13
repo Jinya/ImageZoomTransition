@@ -12,7 +12,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let rootVC = NavController(rootViewController: ThumbImageViewController())
+        let rootVC = Coordinator.shared.navVC
+
         addChild(rootVC)
         view.addSubview(rootVC.view)
         rootVC.didMove(toParent: self)

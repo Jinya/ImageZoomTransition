@@ -7,8 +7,23 @@
 
 import UIKit
 
+protocol ImageDetailViewControllerDelegate: AnyObject {
+    func controller(_ controller: ImageDetailViewController, handlePanToInteractivePopGesture gesture: UIPanGestureRecognizer)
+}
+
 class ImageDetailViewController: UIViewController {
+    weak var delegate: ImageDetailViewControllerDelegate?
+
     let imageView = UIImageView()
+
+    init(delegate: ImageDetailViewControllerDelegate) {
+        self.delegate = delegate
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,10 +47,7 @@ class ImageDetailViewController: UIViewController {
     }
 
     @objc func interactivePopBack(_ gesture: UIPanGestureRecognizer) {
-//        navigationController?.popViewController(animated: true)
-        if let navVC = navigationController as? NavController {
-            navVC.handleSlideToPopGesture(gesture)
-        }
+        delegate?.controller(self, handlePanToInteractivePopGesture: gesture)
     }
 
 }

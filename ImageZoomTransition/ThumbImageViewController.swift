@@ -34,9 +34,10 @@ class ThumbImageViewController: UIViewController {
     }
 
     @objc func pushToDetail() {
-        let detailVC = ImageDetailViewController()
-        detailVC.imageView.image = imageView.image
-        navigationController?.pushViewController(detailVC, animated: true)
+        guard let image = imageView.image else {
+            fatalError()
+        }
+        Coordinator.shared.showImageDetail(with: image)
     }
 }
 
