@@ -11,9 +11,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        let rootVC = NavController(rootViewController: ThumbImageViewController())
+        addChild(rootVC)
+        view.addSubview(rootVC.view)
+        rootVC.didMove(toParent: self)
+
+        rootVC.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
     }
-
-
 }
-

@@ -9,21 +9,37 @@
 /* Begin PBXBuildFile section */
 		30B8BACA28071F7E00748F15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B8BAC928071F7E00748F15 /* AppDelegate.swift */; };
 		30B8BACC28071F7E00748F15 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B8BACB28071F7E00748F15 /* SceneDelegate.swift */; };
-		30B8BACE28071F7E00748F15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B8BACD28071F7E00748F15 /* ViewController.swift */; };
+		30B8BACE28071F7E00748F15 /* ThumbImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B8BACD28071F7E00748F15 /* ThumbImageViewController.swift */; };
 		30B8BAD128071F7E00748F15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30B8BACF28071F7E00748F15 /* Main.storyboard */; };
 		30B8BAD328071F7F00748F15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30B8BAD228071F7F00748F15 /* Assets.xcassets */; };
 		30B8BAD628071F7F00748F15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30B8BAD428071F7F00748F15 /* LaunchScreen.storyboard */; };
+		30B8BADE28071FA300748F15 /* ImageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B8BADD28071FA300748F15 /* ImageDetailViewController.swift */; };
+		30B8BAE02807203300748F15 /* demoImage.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 30B8BADF2807203300748F15 /* demoImage.jpeg */; };
+		30B8BAE32807218000748F15 /* ZoomPushTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B8BAE22807218000748F15 /* ZoomPushTransition.swift */; };
+		30B8BAE52807218A00748F15 /* ZoomPopTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B8BAE42807218A00748F15 /* ZoomPopTransition.swift */; };
+		30B8BAE72807219500748F15 /* ZoomTransitionTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B8BAE62807219500748F15 /* ZoomTransitionTypes.swift */; };
+		30B8BAE9280721A200748F15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B8BAE8280721A200748F15 /* ViewController.swift */; };
+		30B8BAEB2807221C00748F15 /* TransitionUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B8BAEA2807221C00748F15 /* TransitionUtilities.swift */; };
+		30B8BAED2807224100748F15 /* NavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B8BAEC2807224100748F15 /* NavController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		30B8BAC628071F7E00748F15 /* ImageZoomTransition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageZoomTransition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30B8BAC928071F7E00748F15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30B8BACB28071F7E00748F15 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		30B8BACD28071F7E00748F15 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		30B8BACD28071F7E00748F15 /* ThumbImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbImageViewController.swift; sourceTree = "<group>"; };
 		30B8BAD028071F7E00748F15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		30B8BAD228071F7F00748F15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30B8BAD528071F7F00748F15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30B8BAD728071F7F00748F15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30B8BADD28071FA300748F15 /* ImageDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailViewController.swift; sourceTree = "<group>"; };
+		30B8BADF2807203300748F15 /* demoImage.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = demoImage.jpeg; sourceTree = "<group>"; };
+		30B8BAE22807218000748F15 /* ZoomPushTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomPushTransition.swift; sourceTree = "<group>"; };
+		30B8BAE42807218A00748F15 /* ZoomPopTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomPopTransition.swift; sourceTree = "<group>"; };
+		30B8BAE62807219500748F15 /* ZoomTransitionTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomTransitionTypes.swift; sourceTree = "<group>"; };
+		30B8BAE8280721A200748F15 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		30B8BAEA2807221C00748F15 /* TransitionUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionUtilities.swift; sourceTree = "<group>"; };
+		30B8BAEC2807224100748F15 /* NavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +74,29 @@
 			children = (
 				30B8BAC928071F7E00748F15 /* AppDelegate.swift */,
 				30B8BACB28071F7E00748F15 /* SceneDelegate.swift */,
-				30B8BACD28071F7E00748F15 /* ViewController.swift */,
+				30B8BAE8280721A200748F15 /* ViewController.swift */,
+				30B8BAEC2807224100748F15 /* NavController.swift */,
+				30B8BACD28071F7E00748F15 /* ThumbImageViewController.swift */,
+				30B8BADD28071FA300748F15 /* ImageDetailViewController.swift */,
+				30B8BAE12807216000748F15 /* Transition */,
+				30B8BADF2807203300748F15 /* demoImage.jpeg */,
 				30B8BACF28071F7E00748F15 /* Main.storyboard */,
 				30B8BAD228071F7F00748F15 /* Assets.xcassets */,
 				30B8BAD428071F7F00748F15 /* LaunchScreen.storyboard */,
 				30B8BAD728071F7F00748F15 /* Info.plist */,
 			);
 			path = ImageZoomTransition;
+			sourceTree = "<group>";
+		};
+		30B8BAE12807216000748F15 /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				30B8BAE22807218000748F15 /* ZoomPushTransition.swift */,
+				30B8BAE42807218A00748F15 /* ZoomPopTransition.swift */,
+				30B8BAE62807219500748F15 /* ZoomTransitionTypes.swift */,
+				30B8BAEA2807221C00748F15 /* TransitionUtilities.swift */,
+			);
+			path = Transition;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +159,7 @@
 			files = (
 				30B8BAD628071F7F00748F15 /* LaunchScreen.storyboard in Resources */,
 				30B8BAD328071F7F00748F15 /* Assets.xcassets in Resources */,
+				30B8BAE02807203300748F15 /* demoImage.jpeg in Resources */,
 				30B8BAD128071F7E00748F15 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +171,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30B8BACE28071F7E00748F15 /* ViewController.swift in Sources */,
+				30B8BACE28071F7E00748F15 /* ThumbImageViewController.swift in Sources */,
 				30B8BACA28071F7E00748F15 /* AppDelegate.swift in Sources */,
+				30B8BAEB2807221C00748F15 /* TransitionUtilities.swift in Sources */,
 				30B8BACC28071F7E00748F15 /* SceneDelegate.swift in Sources */,
+				30B8BADE28071FA300748F15 /* ImageDetailViewController.swift in Sources */,
+				30B8BAED2807224100748F15 /* NavController.swift in Sources */,
+				30B8BAE32807218000748F15 /* ZoomPushTransition.swift in Sources */,
+				30B8BAE52807218A00748F15 /* ZoomPopTransition.swift in Sources */,
+				30B8BAE9280721A200748F15 /* ViewController.swift in Sources */,
+				30B8BAE72807219500748F15 /* ZoomTransitionTypes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +329,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ImageZoomTransition/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ZoomTransition;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -316,6 +357,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ImageZoomTransition/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ZoomTransition;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
